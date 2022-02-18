@@ -1,5 +1,5 @@
 let userInput;
-userInput = "samosa";
+userInput = prompt("What do you want to have for dinner?", "Type your answer here.");
 if ( userInput === "burrito" ) {
   $("#response").html("Brilliant choice!");
 } else {
