@@ -36,6 +36,12 @@ circle = L.circle(waverlyPlace, {radius: 100,
                                          opacity: 0.9,
                                          fillOpacity: 0.25}
           ).addTo(firstMap);
+circle = L.circle(washingtonSquarePark, {radius: 100,
+                                         color: "#859900",
+                                         fillColor: "#cb4b16",
+                                         opacity: 0.9,
+                                         fillOpacity: 0.25}
+          ).addTo(firstMap);
 //
 let waverlyPlace;
 waverlyPlace = L.marker([41.079104, -73.7783911]);
