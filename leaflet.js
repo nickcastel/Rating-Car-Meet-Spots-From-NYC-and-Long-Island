@@ -5,3 +5,5 @@ tileLayer = L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/ligh
       subdomains: "abcd",
       maxZoom: 18
     });
+tileLayer.addTo(firstMap);
+firstMap.setView([40.730833, -73.9975], 16);
