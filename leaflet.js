@@ -12,3 +12,8 @@ let bobstLibrary;
 bobstLibrary = L.marker([40.729444, -73.997222]);
 bobstLibrary.addTo(firstMap);
 bobstLibrary.bindPopup("This is Bobst Library.");
+//
+let bobstCoords;
+bobstCoords = L.latLng(40.729444, -73.997222);
+firstMap.panTo(bobstCoords);
+//
