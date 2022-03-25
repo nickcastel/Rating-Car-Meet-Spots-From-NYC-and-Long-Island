@@ -1,3 +1,5 @@
+let firstMap;
+firstMap = L.map("first-map");
 let firstMap, tileLayer;
 firstMap = L.map("first-map");
 tileLayer =
