@@ -28,6 +28,7 @@ tenThousandthPolygon = L.polygon(tenThousandth, {
                                   fillColor: "#fdf6e3"
                                 }
                         ).addTo(firstMap);
+//
 let circle;
 circle = L.circle(washingtonSquarePark, {radius: 100,
                                          color: "#859900",
