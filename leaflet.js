@@ -7,6 +7,7 @@ tileLayer = L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/ligh
     });
 tileLayer.addTo(firstMap);
 firstMap.setView([40.730833, -73.9975], 16);
+//adding markers below here//
 let bobstLibrary;
 bobstLibrary = L.marker([40.729444, -73.997222]);
 bobstLibrary.addTo(firstMap);
