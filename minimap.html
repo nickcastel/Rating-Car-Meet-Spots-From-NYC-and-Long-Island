@@ -108,79 +108,80 @@ var map = L.mapbox.map('map', 'mapbox.streets', {
   container: 'map',
 });
 
-var myLayer = L.mapbox.featureLayer().addTo(map);
+      var myLayer = L.mapbox.featureLayer().addTo(map);
 
-var geoJson = [{
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.395667, 53.983818]},
-    "properties": {
-        'title': 'Molloy Media Archaeology',
-        'marker-color': '#FFFFFF',
-        'marker-symbol': 'circle',
-        'marker-size': 'large',
+      var geoJson = [{
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-74.002322,40.758295]},
+          "properties": {
+              'title': 'Jacob K. Javits Convention Center',
+              'marker-color': '#7e7e7e',
+              'marker-symbol': 'city',
+              'marker-size': 'large',
 
-        // Store the image url and caption in an array.
-        'images': [
-          ['http://molloymediaarchaeology.org/images/droneabove.jpg','You are about to experience an interactive map and <a href="http://molloyenglish.org/omeka-2.4">archive</a> of the Boyne Valley in Northeastern Ireland. The map and <a href="http://molloyenglish.org/omeka-2.4">archive</a> were created in the spring of 2016 by the students of SAP 261 [Media Archaeology] in consultation with <a href="http://mapplega.com">Matt Applegate</a>, <a href="http://www.jamesncohen.com/">Jamie Cohen</a>, <a href="http://margaretdelima.com/home.html">Maraget DeLima</a>, and Destinee Day.'],          ['http://molloymediaarchaeology.org/images/dkitwide.jpg','Students completed this map and archive along with a certificate in <a href="https://www.dkit.ie/news/dkit-unveils-new-programme-certificate-cultural-landscapes-newgrange-boyne-valley">Cultural Landscapes</a> at <a href="https://www.dkit.ie/">DkIT</a>, Dundalk Institute of Technology, led by professor <a href="https://www.dkit.ie/users/dr-conor-brady">Conor Brady</a>.'],
-          ['http://molloymediaarchaeology.org/images/molloylogo.jpg', '<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Molloy Media Archaeology Map & Archive</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://molloymediaarchaeology.org/archive" property="cc:attributionName" rel="cc:attributionURL">SAP 261</a>, led by <a href="http://mapplega.com">Matt Applegate</a>, <a href="http://www.jamesncohen.com/">Jamie Cohen</a>, & <a href="http://margaretdelima.com/home.html">Margaret DeLima</a>, is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. <br><br>Our map is powered by <a href="http://mapbox.com">Mapbox</a> and our archive is powered by <a href="http://omeka.org">Omeka!</a>']
-        ]
-    }
-}, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-5.930120, 54.597285]},
-    "properties": {
-        'title': 'Belfast Peace Lines',
-        'marker-color': '#FFFFFF',
-        'marker-symbol': 'city',
-        'marker-size': 'large',
-        'images': [
-          ['https://drive.google.com/uc?id=1pyrWXWSgR-1LxtI9cYtDY_JbOV4Pjm7Z','The Belfast Peace Lines were constructed in 1969 and divided Catholic communities from Protestant ones.'],
-          ['http://molloymediaarchaeology.org/images/peacewall2.jpg','Molloy students visited the peace lines on May 28, 2016.'],
-          ['http://molloymediaarchaeology.org/images/peacewall3.jpg','Students wrote their names and messages on the walls, leaving a mark on the structure. Writing on the walls is a common and important act of memorialization.']
-        ]
-    }
-}, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-73.6291694641113, 40.6866260456405]},
-    "properties": {
-        'title': 'Molloy College',
-        'marker-color': '#a01f2c',
-        'marker-symbol': 'college',
-        'marker-size': 'medium',
-        'images': [
-          ['https://upload.wikimedia.org/wikipedia/en/6/61/MolloyCollege_Logo.png','This is where I teach Coding for the Humanities!'],
-          ['https://www.molloy.edu/Images/NMD_Acad_2018.jpg','I love New Media!'],
-          ['https://pbs.twimg.com/media/D1eev5CXQAYm_7x.jpg','Don\'t you?']
-        ]
-    }
-}, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.2603, 53.349805]},
-    "properties": {
-        'title': 'Dublin, Ireland',
-        'marker-color': '#FFFFFF',
-        'marker-symbol': 'city',
-        'marker-size': 'large',
-        'images': [
-          ['http://molloymediaarchaeology.org/images/dublintown.jpg','Students spent Sunday, May 29 in Dublin, Ireland.'],
-          ['http://molloymediaarchaeology.org/images/jervis.jpg','<iframe width="280" height="195" src="https://www.youtube.com/embed/O31ciXE9tns" frameborder="0" allowfullscreen></iframe>','Students documented what they saw and experienced.']
-        ]
-    }
-}, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.42425, 53.72220]},
-    "properties": {
-        'title': 'The Memory Sculpture',
-        'marker-color': '#FFD700',
-        'marker-symbol': 'monument',
-        'marker-size': 'medium',
-        'images': [
-          ['http://molloymediaarchaeology.org/images/adriana_memory2.jpg','The Memory Sculpture is another piece kept within the Walled Gardens.'],
-          ['http://molloymediaarchaeology.org/images/grant_pole2.jpg','The sculpture is a remnant of another tree present at the Battle of the Boyne.'],
-          ['http://molloymediaarchaeology.org/images/grant_pole4.jpg','The wooden monument is intended to serve as a reminder to visitors that history never goes away -- it is forever present and forever a part of the people it touches.']
-        ]
-    }
-}];
+              // Store the image url and caption in an array.
+              'images': [
+                ['https://live.staticflickr.com/65535/52065903054_b05325663f_b.jpg','My first ever visit to the Javits Center truly is one of the biggest memories I have as it is what opened my eyes to all of the other types of cars. No longer was I interested in only old American muscle cars but now my interest in Japanese and European cars had began to grow.'],          ['https://live.staticflickr.com/65535/52066158055_2b7f30bc84_k.jpg','This also became my first ever encounter with tuner culture. A section of car culture full of people who strive to get the best desired performance level out of their cars through engine tuning, to aftermarket parts and accessories.'],
+                ['https://live.staticflickr.com/65535/52065667026_9a263f328d_c.jpg', '<iframe width="280" height="195" src="https://www.youtube.com/embed/3MoX_YwfHx8?start=324" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
+              ]
+          }
+      }, {
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.429925,40.610675]},
+          "properties": {
+              'title': 'Tobay Beach',
+              'marker-color': '#0e9fdd',
+              'marker-symbol': 'wetland',
+              'marker-size': 'large',
+              'images': [
+                ['https://live.staticflickr.com/65535/52066125400_64ee667f39_b.jpg','Tobay Beach, as you will find out in the video located on the last slide here, is a site I have not had much luck from. Aside from the great memories of doing donuts arounded the lightpoles as well as our cars before leaving for Buffalo Wild Wings, I have not had the best luck when it has come to car meets.'],
+                ['https://live.staticflickr.com/65535/52065937304_76bbfaccef_c.jpg','Despite not having good luck here, like I said, it still holds some amazing memories from early on in my car community career, if you will. Not to mention it is right by the water and maybe in the future I will have better luck with the car shows hosted here.'],
+                ['https://live.staticflickr.com/65535/52065700696_10e92d893a_h.jpg','<iframe width="280" height="195" src="https://www.youtube.com/embed/3MoX_YwfHx8?start=432" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
+              ]
+          }
+      }, {
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.252115, 40.641073]},
+          "properties": {
+              'title': 'Captree State Park',
+              'marker-color': '#0e9fdd',
+              'marker-symbol': 'lighthouse',
+              'marker-size': 'large',
+              'images': [
+                ['https://live.staticflickr.com/65535/52065652313_bb1760f48a_c.jpg','Captree State Park is home to the first community run car meet that I have ever attended. It was also the first time I had ever seen a Mazda RX7 before, one of my favorite cars of all time... Even if it was not in the greatest condition ever...'],
+                ['https://live.staticflickr.com/65535/51162825573_85f2c634fb_h.jpg','It is also the place where I took one of the best night shots of my previous car. A shot that Captured a passing plain in a long exposure, creating the illusion of something that appears to be a shooting star pasing overhead! By far my favorite photo of my previous car.'],
+                ['https://live.staticflickr.com/65535/52065870769_e920723c4e_b.jpg','<iframe width="280" height="195" src="https://www.youtube.com/embed/3MoX_YwfHx8?start=559" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
+              ]
+          }
+      }, {
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.654350,40.635138]},
+          "properties": {
+              'title': 'Cars and Coffee',
+              'marker-color': '#66482D',
+              'marker-symbol': 'cafe',
+              'marker-size': 'large',
+              'images': [
+                ['https://live.staticflickr.com/65535/52064594787_84f65a8515_k.jpg','I am definitely not a morning person and I never had a reason to become one. That was until I discovered the fruitful world of Cars and Coffee. Cars and Coffee meets are a super popular form of casual meet up that take place across the country and even around the globe! It is a great way to sit back, grab a bite and relax while looking at everyone and their automobiles!'],
+                ['https://live.staticflickr.com/65535/52065652438_52d067c08b_b.jpg', 'Cars and Coffee holds a near and dear spot in my heart due to all the whacky cars I have seen over the years! By far this small BMW Isetta is my favorite. The little one seater that reminds me of a refridgerator and funny enough, the door opens like a fridge too!'],
+                ['https://live.staticflickr.com/65535/52066125360_8636993550_c.jpg','<iframe width="280" height="195" src="https://www.youtube.com/embed/3MoX_YwfHx8?start=200" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
+              ]
+          }
+      }, {
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.251439,40.724978]},
+          "properties": {
+              'title': '7 Eleven',
+              'marker-color': '#2DA131',
+              'marker-symbol': 'shop',
+              'marker-size': 'large',
+              'images': [
+                ['https://live.staticflickr.com/65535/52064685237_8ff7039c16_c.jpg','7 Eleven is a place that we all have visited and will most likely continue visiting. I never had exoected a place like 7 Eleven to get any better than a place to get quick snacks, amazing Slurpees and potentially hazardous hot foods that you should avoid at all costs, that was until I stumbled upon the car culture that was growing through their car focused Instagram account!'],
+                ['https://live.staticflickr.com/65535/52065700701_2f59e81bb7_c.jpg','The representation of the automotive community in posts like the one previously shown quickly turned every 7 Eleven into a car meet spot. JDM to American Muscle to Euro Sport cars, all car fans began to call 7 Eleven their home shortly after these posts.'],
+                ['https://live.staticflickr.com/65535/52066216240_29e42db065_c.jpg','<iframe width="280height="195src="https://www.youtube.com/embed/3MoX_YwfHx8?start=654" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
+              ]
+          }
+      }];
 
 // Add custom popup html to each marker.
 myLayer.on('layeradd', function(e) {
